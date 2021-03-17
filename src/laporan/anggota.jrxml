@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="cd497b36-c721-447c-85cb-16bf5d65dcb0">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     dataanggota.`No` AS dataanggota_No,
+     dataanggota.`NamaAnggota` AS dataanggota_NamaAnggota,
+     dataanggota.`JenisKelamin` AS dataanggota_JenisKelamin,
+     dataanggota.`Alamat` AS dataanggota_Alamat,
+     dataanggota.`Telepon` AS dataanggota_Telepon,
+     dataanggota.`Email` AS dataanggota_Email,
+     dataanggota.`Sabuk` AS dataanggota_Sabuk,
+     dataanggota.`kategori` AS dataanggota_kategori
+FROM
+     `dataanggota` dataanggota]]>
+	</queryString>
+	<field name="dataanggota_No" class="java.lang.String"/>
+	<field name="dataanggota_NamaAnggota" class="java.lang.String"/>
+	<field name="dataanggota_JenisKelamin" class="java.lang.String"/>
+	<field name="dataanggota_Alamat" class="java.lang.String"/>
+	<field name="dataanggota_Telepon" class="java.lang.String"/>
+	<field name="dataanggota_Email" class="java.lang.String"/>
+	<field name="dataanggota_Sabuk" class="java.lang.String"/>
+	<field name="dataanggota_kategori" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="122" splitType="Stretch">
+			<staticText>
+				<reportElement x="158" y="10" width="238" height="34" uuid="5d25c977-34fe-48fc-b19d-155f2679b21e"/>
+				<textElement>
+					<font size="19" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SDN KRAMAT JATI 18 PG]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="100" y="44" width="370" height="28" uuid="bf42b510-696c-4502-ae3f-714bbfe7019d"/>
+				<textElement>
+					<font size="21" isBold="true"/>
+				</textElement>
+				<text><![CDATA[EKSTRAKURIKULER TAEKWONDO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="127" y="72" width="314" height="28" uuid="46814e7f-f2af-4b90-919d-0d17570e13bb"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Jl. Langgar No.31, RT.2/RW.10, Kramat Jati, Kec. Kramat jati, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13510]]></text>
+			</staticText>
+			<line>
+				<reportElement x="11" y="106" width="533" height="1" uuid="b129a840-9164-4b92-b206-c511453062ec"/>
+			</line>
+			<line>
+				<reportElement x="11" y="112" width="533" height="1" uuid="00560932-5059-41f0-ab31-febceba19ce5"/>
+			</line>
+			<image>
+				<reportElement x="2" y="6" width="98" height="84" uuid="d3a4eee7-615c-49c7-a981-5c233c1293f8"/>
+				<imageExpression><![CDATA["D:\\Semester 6\\Pemrograman Visual\\Tugas\\src\\gambar\\tutwurihandayani.jpg"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="441" y="6" width="126" height="116" uuid="a42798a1-1820-407c-89d6-16a767ab5fc2"/>
+				<imageExpression><![CDATA["D:\\Semester 6\\Pemrograman Visual\\Tugas\\src\\gambar\\fix bgt.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="212" y="0" width="128" height="24" uuid="242a3c71-25db-43dc-9311-b309b33ce39a"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[DATA ANGGOTA]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="25" splitType="Stretch">
+			<staticText>
+				<reportElement x="2" y="1" width="28" height="20" uuid="d0d7d4ce-a3e1-4354-b5f1-2380518ea755"/>
+				<text><![CDATA[No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="30" y="1" width="69" height="20" uuid="3d8419db-37d1-4ef6-9396-585cf25d3ef7"/>
+				<text><![CDATA[Nama Anggota]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="104" y="1" width="69" height="20" uuid="cac3c77f-7562-445d-a087-af31ed72ee32"/>
+				<text><![CDATA[Jenis Kelamin]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="173" y="1" width="69" height="20" uuid="1ccb1123-e211-49be-9c82-64b43658487c"/>
+				<text><![CDATA[Alamat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="242" y="1" width="69" height="20" uuid="5bf105f0-3e18-4117-9112-83cb97a5020e"/>
+				<text><![CDATA[Telepon]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="311" y="0" width="69" height="20" uuid="e8754dc4-bc74-4785-8251-ecc1a991748a"/>
+				<text><![CDATA[Email]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="431" y="1" width="69" height="20" uuid="6193290b-1370-451b-a283-f855e51f186b"/>
+				<text><![CDATA[Sabuk]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="488" y="1" width="69" height="20" uuid="04c1b8b0-d5cc-41e5-8b09-31d37fca29c6"/>
+				<text><![CDATA[kategori]]></text>
+			</staticText>
+			<line>
+				<reportElement x="2" y="0" width="555" height="1" uuid="a1bb4042-6674-43df-a097-a92a77bc8060"/>
+			</line>
+			<line>
+				<reportElement x="0" y="24" width="555" height="1" uuid="7a1e598f-901e-4787-9361-687e89f1e92a"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="31" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="3" width="30" height="20" uuid="0631ecd9-e593-4605-961c-24404442d76a"/>
+				<textFieldExpression><![CDATA[$F{dataanggota_No}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="30" y="3" width="74" height="20" uuid="00344fc0-d245-483d-9f56-3d1d6dbd5eca"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{dataanggota_NamaAnggota}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="104" y="0" width="69" height="20" uuid="855acc2c-6867-490a-9122-0324f1c0c475"/>
+				<textFieldExpression><![CDATA[$F{dataanggota_JenisKelamin}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="311" y="3" width="120" height="20" uuid="aad87af5-c764-4566-b437-fe2f667e7c01"/>
+				<textFieldExpression><![CDATA[$F{dataanggota_Email}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="431" y="3" width="55" height="20" uuid="371c84dd-8120-4eec-bf2b-4adcb63f0123"/>
+				<textFieldExpression><![CDATA[$F{dataanggota_Sabuk}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="486" y="3" width="69" height="20" uuid="d7d98d28-f5fa-4ac9-9098-9097e4676be9"/>
+				<textFieldExpression><![CDATA[$F{dataanggota_kategori}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="21" width="555" height="1" uuid="25ca26dc-2d0c-4271-b538-99876dd1982d"/>
+			</line>
+			<textField>
+				<reportElement x="242" y="3" width="69" height="20" uuid="b3652da0-8283-4845-ba4d-c780ea5d642d"/>
+				<textFieldExpression><![CDATA[$F{dataanggota_Telepon}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="173" y="1" width="69" height="20" uuid="993fc3e4-37cd-4864-9c2f-31189ec0416f"/>
+				<textFieldExpression><![CDATA[$F{dataanggota_Alamat}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

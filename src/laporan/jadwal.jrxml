@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="eab73138-0b18-4508-a3be-dcd1ecefdb3d">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     datajadwal.`Kd Jadwal` AS datajadwal_Kd_Jadwal,
+     datajadwal.`Nama Jadwal` AS datajadwal_Nama_Jadwal,
+     datajadwal.`Hari` AS datajadwal_Hari,
+     datajadwal.`Waktu` AS datajadwal_Waktu
+FROM
+     `datajadwal` datajadwal]]>
+	</queryString>
+	<field name="datajadwal_Kd_Jadwal" class="java.lang.String"/>
+	<field name="datajadwal_Nama_Jadwal" class="java.lang.String"/>
+	<field name="datajadwal_Hari" class="java.lang.String"/>
+	<field name="datajadwal_Waktu" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="121" splitType="Stretch">
+			<staticText>
+				<reportElement x="127" y="62" width="314" height="28" uuid="9d2fbd59-8cd7-4e91-b859-116b7396a50b"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Jl. Langgar No.31, RT.2/RW.10, Kramat Jati, Kec. Kramat jati, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13510]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="99" y="34" width="370" height="28" uuid="c2ee13cd-ad3b-490d-a1f8-a00a0e327fc3"/>
+				<textElement>
+					<font size="21" isBold="true"/>
+				</textElement>
+				<text><![CDATA[EKSTRAKURIKULER TAEKWONDO]]></text>
+			</staticText>
+			<line>
+				<reportElement x="11" y="102" width="533" height="1" uuid="df283415-e87b-4f75-bd9c-816560ab4332"/>
+			</line>
+			<line>
+				<reportElement x="11" y="96" width="533" height="1" uuid="3d0a615b-a8a3-42b3-a2c6-c4127ebaa0fb"/>
+			</line>
+			<staticText>
+				<reportElement x="158" y="0" width="238" height="34" uuid="166e585e-1267-4c8b-8720-5713aa8f016b"/>
+				<textElement>
+					<font size="19" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SDN KRAMAT JATI 18 PG]]></text>
+			</staticText>
+			<image>
+				<reportElement x="461" y="-4" width="93" height="94" uuid="b3a35dcc-f6c7-4129-a6ef-24cb0d412143"/>
+				<imageExpression><![CDATA["D:\\Semester 6\\Pemrograman Visual\\Tugas\\src\\gambar\\fix bgt.jpg"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="2" y="-4" width="98" height="84" uuid="83615b65-f881-4382-a1c1-feeb922c5ad8"/>
+				<imageExpression><![CDATA["D:\\Semester 6\\Pemrograman Visual\\Tugas\\src\\gambar\\tutwurihandayani.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="38" splitType="Stretch">
+			<staticText>
+				<reportElement x="188" y="-3" width="187" height="34" uuid="db22fa28-3e55-41c4-973d-646be3f97e2f"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[DATA JADWAL LATIHAN]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="85" y="42" width="73" height="20" uuid="a9e0a973-b6ba-43d6-8f7d-349cab818cea"/>
+				<text><![CDATA[Kode Jadwal]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="203" y="42" width="73" height="20" uuid="f858a32c-03d7-476a-897f-3219d2981173"/>
+				<text><![CDATA[Nama Jadwal]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="319" y="42" width="33" height="20" uuid="dd2ed46e-f356-4f76-816b-d7b37eb35b53"/>
+				<text><![CDATA[Hari]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="409" y="42" width="70" height="20" uuid="5c945255-1d84-440c-97a2-707662eba894"/>
+				<text><![CDATA[Waktu]]></text>
+			</staticText>
+			<line>
+				<reportElement x="77" y="32" width="374" height="1" uuid="aed7374f-47c1-41ad-b1ff-11848f9d85db"/>
+			</line>
+			<line>
+				<reportElement x="77" y="72" width="374" height="1" uuid="de00cf63-a870-4f2f-8101-a76d06b4d423"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="36" splitType="Stretch">
+			<textField>
+				<reportElement x="87" y="5" width="73" height="20" uuid="bc51063b-3648-40f9-a1c1-b42bdc08fef3"/>
+				<textFieldExpression><![CDATA[$F{datajadwal_Kd_Jadwal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="205" y="5" width="86" height="20" uuid="9ba58909-efea-4979-b54f-cc9f72783c28"/>
+				<textFieldExpression><![CDATA[$F{datajadwal_Nama_Jadwal}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="321" y="5" width="71" height="20" uuid="3862d8d8-fb95-4963-a79a-b2bb820259db"/>
+				<textFieldExpression><![CDATA[$F{datajadwal_Hari}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="411" y="5" width="30" height="20" uuid="0b7e5c42-72b4-474f-af9a-fad320231388"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{datajadwal_Waktu}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="112" splitType="Stretch">
+			<line>
+				<reportElement x="394" y="82" width="130" height="1" uuid="2faedafe-cfc8-4b53-8310-c0f05a692062"/>
+			</line>
+			<staticText>
+				<reportElement x="410" y="0" width="100" height="20" uuid="c9b68198-59c7-4731-9fcf-3d4a0242e9e0"/>
+				<textElement textAlignment="Center">
+					<font isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Pelatih]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="394" y="92" width="130" height="20" uuid="bca311e1-da4f-473e-bbdc-24c9b51c30f3"/>
+				<textElement textAlignment="Center">
+					<font isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Mayvina Ratnasari, S.Pd.]]></text>
+			</staticText>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

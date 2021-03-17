@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="7d966f2e-2399-40c4-b1ca-1d78c2f9e01e">
+	<property name="ireport.zoom" value="1.1"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="163"/>
+	<parameter name="Nama" class="java.lang.String">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[select * from formpoomsae where Nama = $P{Nama}]]>
+	</queryString>
+	<field name="Nama" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Tanggal" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Fisik" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Kekuatan" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Teknik" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Mental" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Power" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Keseimbangan" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Total" class="java.lang.Integer">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Ratarata" class="java.lang.Double">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="Keterangan" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="140" splitType="Stretch">
+			<staticText>
+				<reportElement x="156" y="20" width="238" height="34" uuid="6614ae5b-f270-4fa4-ab3d-5340180db552"/>
+				<textElement>
+					<font size="19" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SDN KRAMAT JATI 18 PG]]></text>
+			</staticText>
+			<image>
+				<reportElement x="470" y="10" width="85" height="90" uuid="5afa6fe5-b2e3-40d2-b009-6cbe40271f7d"/>
+				<imageExpression><![CDATA["D:\\Semester 6\\Pemrograman Visual\\Tugas\\src\\gambar\\KJI.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="125" y="82" width="314" height="28" uuid="d7ba8a45-c7a4-4d0c-a329-50c7557cab8b"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Jl. Langgar No.31, RT.2/RW.10, Kramat Jati, Kec. Kramat jati, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13510]]></text>
+			</staticText>
+			<line>
+				<reportElement x="9" y="122" width="533" height="1" uuid="6c4e8ec4-462e-4280-a1b4-3b51358a8573"/>
+			</line>
+			<line>
+				<reportElement x="9" y="116" width="533" height="1" uuid="37592008-e1a9-4380-a4cf-19435e0b4332"/>
+			</line>
+			<image>
+				<reportElement x="0" y="16" width="98" height="84" uuid="e74d1225-64ec-4c4e-8563-df7f532139c8"/>
+				<imageExpression><![CDATA["D:\\Semester 6\\Pemrograman Visual\\Tugas\\src\\gambar\\tutwurihandayani.jpg"]]></imageExpression>
+			</image>
+			<staticText>
+				<reportElement x="98" y="54" width="370" height="28" uuid="193a0446-7a53-4675-b455-158d69e37342"/>
+				<textElement>
+					<font size="21" isBold="true"/>
+				</textElement>
+				<text><![CDATA[EKSTRAKURIKULER TAEKWONDO]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="1" y="5" width="50" height="20" uuid="82045b14-3482-4ffa-9a2c-51d9ae862be1"/>
+				<text><![CDATA[Tanggal]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="64" y="5" width="100" height="20" uuid="b33f4463-62b3-45d2-8082-ac8e0eb9a917"/>
+				<textFieldExpression><![CDATA[$F{Tanggal}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="19" width="50" height="20" uuid="19e4ca85-0760-43af-a298-525b34cfa1c3"/>
+				<text><![CDATA[Nama]]></text>
+			</staticText>
+			<line>
+				<reportElement x="-22" y="59" width="599" height="1" uuid="df394d32-9507-4693-adfa-463a019d471e"/>
+			</line>
+			<textField>
+				<reportElement x="64" y="19" width="100" height="20" uuid="80ca309d-4884-4d1c-a20b-fed05af78528"/>
+				<textFieldExpression><![CDATA[$F{Nama}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="381" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="36" width="50" height="20" uuid="f99304bb-e4d0-4f43-93d3-929290f28f24"/>
+				<text><![CDATA[Fisik]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="74" y="36" width="50" height="20" uuid="049af551-f007-45e9-a0a3-0fd11b2932f2"/>
+				<text><![CDATA[Kekuatan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="150" y="36" width="50" height="20" uuid="11f8e696-2932-44e6-a1c6-32d8849e1692"/>
+				<text><![CDATA[Teknik]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="225" y="36" width="50" height="20" uuid="8b9b6dc4-a378-41df-a2fa-481a69174645"/>
+				<text><![CDATA[Mental]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="300" y="36" width="50" height="20" uuid="9406177d-54fd-45f0-94c1-dfd5cd5b4fe4"/>
+				<text><![CDATA[Power]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="372" y="36" width="78" height="20" uuid="711d7dd3-e807-4058-a612-c708405ae4b9"/>
+				<text><![CDATA[Keseimbangan]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="136" width="50" height="20" uuid="7c68bfd8-2800-4e5d-963c-a0892ade4c38"/>
+				<text><![CDATA[Total]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="173" width="50" height="20" uuid="9d23af48-cff3-47e9-b5d5-066e0d1cee1f"/>
+				<text><![CDATA[Rata rata]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="212" width="74" height="20" uuid="587ad81f-2b9f-411e-880d-70067af52c8d"/>
+				<text><![CDATA[Keterangan]]></text>
+			</staticText>
+			<line>
+				<reportElement x="-20" y="6" width="480" height="1" uuid="80aacf73-5f0f-40e1-89dd-8d37217aa4cc"/>
+			</line>
+			<line>
+				<reportElement x="-21" y="105" width="481" height="1" uuid="6a14a6da-672d-4afa-a6c1-30af134c3990"/>
+			</line>
+			<line>
+				<reportElement x="460" y="7" width="1" height="98" uuid="07d6971e-72f6-4f9f-8697-4b80e53d1178"/>
+			</line>
+			<line>
+				<reportElement x="361" y="7" width="1" height="98" uuid="b0adc602-5d89-46c0-a46b-065dfb6eb9ed"/>
+			</line>
+			<line>
+				<reportElement x="288" y="7" width="1" height="98" uuid="c5b28df1-6069-4416-ac47-00a7f778ae55"/>
+			</line>
+			<line>
+				<reportElement x="212" y="7" width="1" height="98" uuid="ac779f58-807a-4dc0-990d-b7d5c1067951"/>
+			</line>
+			<line>
+				<reportElement x="137" y="7" width="1" height="98" uuid="9bdd94ed-ae34-4f98-8d72-18cb33aaa029"/>
+			</line>
+			<line>
+				<reportElement x="61" y="8" width="1" height="98" uuid="464e1b13-ed75-4243-ac1f-1e186c6b7a0a"/>
+			</line>
+			<textField>
+				<reportElement x="1" y="69" width="60" height="20" uuid="35d81934-55ac-4b0e-a83c-b9332d1363af"/>
+				<textFieldExpression><![CDATA[$F{Fisik}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="74" y="69" width="52" height="20" uuid="84e0d0f2-a257-40cc-92d6-282256e5f706"/>
+				<textFieldExpression><![CDATA[$F{Kekuatan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="150" y="69" width="50" height="20" uuid="a79781ca-7015-4064-bc94-123ec4426671"/>
+				<textFieldExpression><![CDATA[$F{Teknik}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="225" y="69" width="50" height="20" uuid="1b4ba9ac-491b-4c45-a6c7-482249b11e53"/>
+				<textFieldExpression><![CDATA[$F{Mental}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="300" y="69" width="50" height="20" uuid="829a197c-cc5e-46e2-a924-5d132c177ff3"/>
+				<textFieldExpression><![CDATA[$F{Power}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="372" y="69" width="78" height="20" uuid="e96f9f26-e80f-47f8-8ce2-ad9c54eb979e"/>
+				<textFieldExpression><![CDATA[$F{Keseimbangan}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="94" y="136" width="100" height="20" uuid="e67ac04d-7e2a-45fc-acdd-a07defa939f7"/>
+				<textFieldExpression><![CDATA[$F{Total}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="94" y="173" width="100" height="20" uuid="2256a22a-e19e-45d5-a9a1-1dc79e8215d8"/>
+				<textFieldExpression><![CDATA[$F{Ratarata}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="94" y="212" width="100" height="20" uuid="4a9129bc-e22b-4b67-b789-a157a95be925"/>
+				<textFieldExpression><![CDATA[$F{Keterangan}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

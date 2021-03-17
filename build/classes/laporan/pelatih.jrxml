@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="null" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="912f681f-fd7c-4e21-b4f6-d8c32f32d192">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="105"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     datapelatih.`NIP` AS datapelatih_NIP,
+     datapelatih.`NamaPelatih` AS datapelatih_NamaPelatih,
+     datapelatih.`JenisKelamin` AS datapelatih_JenisKelamin,
+     datapelatih.`Alamat` AS datapelatih_Alamat,
+     datapelatih.`Telepon` AS datapelatih_Telepon,
+     datapelatih.`Email` AS datapelatih_Email,
+     datapelatih.`Sabuk` AS datapelatih_Sabuk,
+     datapelatih.`Kategori` AS datapelatih_Kategori
+FROM
+     `datapelatih` datapelatih]]>
+	</queryString>
+	<field name="datapelatih_NIP" class="java.lang.String"/>
+	<field name="datapelatih_NamaPelatih" class="java.lang.String"/>
+	<field name="datapelatih_JenisKelamin" class="java.lang.String"/>
+	<field name="datapelatih_Alamat" class="java.lang.String"/>
+	<field name="datapelatih_Telepon" class="java.lang.String"/>
+	<field name="datapelatih_Email" class="java.lang.String"/>
+	<field name="datapelatih_Sabuk" class="java.lang.String"/>
+	<field name="datapelatih_Kategori" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="130" splitType="Stretch">
+			<staticText>
+				<reportElement x="127" y="72" width="314" height="28" uuid="e82341e9-4f45-400b-88bd-cf46287bdf64"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Jl. Langgar No.31, RT.2/RW.10, Kramat Jati, Kec. Kramat jati, Kota Jakarta Timur, Daerah Khusus Ibukota Jakarta 13510]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="158" y="10" width="238" height="34" uuid="62104fba-afe0-4af1-bd40-8be03fb94c6c"/>
+				<textElement>
+					<font size="19" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SDN KRAMAT JATI 18 PG]]></text>
+			</staticText>
+			<line>
+				<reportElement x="11" y="106" width="533" height="1" uuid="11177784-c8ab-4564-92e2-09da72f7d3a0"/>
+			</line>
+			<staticText>
+				<reportElement x="99" y="44" width="370" height="28" uuid="22f5b8d9-26d6-430e-8aef-155da10c9366"/>
+				<textElement>
+					<font size="21" isBold="true"/>
+				</textElement>
+				<text><![CDATA[EKSTRAKURIKULER TAEKWONDO]]></text>
+			</staticText>
+			<image>
+				<reportElement x="2" y="6" width="98" height="84" uuid="a2cc96eb-4b91-4a52-a671-c4a7e263caf0"/>
+				<imageExpression><![CDATA["D:\\Semester 6\\Pemrograman Visual\\Tugas\\src\\gambar\\tutwurihandayani.jpg"]]></imageExpression>
+			</image>
+			<line>
+				<reportElement x="11" y="112" width="533" height="1" uuid="9fbce796-834a-41c7-b56a-f70810163cc6"/>
+			</line>
+			<image>
+				<reportElement x="461" y="6" width="93" height="94" uuid="ba3d1d67-4e41-4755-90d4-258ce6ada8d1"/>
+				<imageExpression><![CDATA["D:\\Semester 6\\Pemrograman Visual\\Tugas\\src\\gambar\\fix bgt.jpg"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="212" y="10" width="128" height="24" uuid="4dde8b7c-08e0-4412-a930-c5aadf2faaf3"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true" isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[DATA PELATIH]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="73" splitType="Stretch">
+			<staticText>
+				<reportElement x="77" y="41" width="73" height="20" uuid="c68ab425-b1d0-484f-ab0e-607dcd6cbcdc"/>
+				<text><![CDATA[Nama Pelatih]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="17" y="42" width="22" height="19" uuid="cd059abc-b42e-41f2-ba49-640e7e8f0144"/>
+				<text><![CDATA[NIP]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="140" y="41" width="75" height="20" uuid="ff3bd943-fa79-4ddf-bf5a-eb16191296aa"/>
+				<text><![CDATA[Jenis Kelamin]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="217" y="41" width="40" height="20" uuid="eb1098ce-552c-4275-aeb4-eefade97e909"/>
+				<text><![CDATA[Alamat]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="270" y="41" width="55" height="20" uuid="6f9c4c5e-3995-4c4a-825b-5b2e2f86c475"/>
+				<text><![CDATA[Telepon]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="345" y="41" width="44" height="20" uuid="2a2376b2-c915-40cd-99f8-13611668b549"/>
+				<text><![CDATA[Email]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="455" y="41" width="37" height="20" uuid="5e79eee3-bafc-413e-98bd-547722fe5314"/>
+				<text><![CDATA[Sabuk]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="502" y="41" width="55" height="20" uuid="a81e211f-c260-4e75-a42d-a05d358185e9"/>
+				<text><![CDATA[Kategori]]></text>
+			</staticText>
+			<line>
+				<reportElement x="16" y="70" width="538" height="1" uuid="77acf37c-e515-4b35-96fd-3989c304c456"/>
+			</line>
+			<line>
+				<reportElement x="16" y="30" width="538" height="1" uuid="b33b8d1a-486b-46be-8c80-0b6b68b2d5ce"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="36" splitType="Stretch">
+			<textField>
+				<reportElement x="77" y="10" width="73" height="20" uuid="8b5f38b8-e9b6-4f7a-a049-5a31cb660a62"/>
+				<textFieldExpression><![CDATA[$F{datapelatih_NamaPelatih}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="17" y="10" width="70" height="20" uuid="e9d3b5bf-7f2c-4a13-b7ba-9e1a48c50b96"/>
+				<textFieldExpression><![CDATA[$F{datapelatih_NIP}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="140" y="10" width="75" height="20" uuid="e71c4db8-9ebc-4a70-94bf-8a0bc57d610c"/>
+				<textFieldExpression><![CDATA[$F{datapelatih_JenisKelamin}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="217" y="10" width="63" height="20" uuid="158cc7bf-6f87-4105-bf47-d60e00a1ac2a"/>
+				<textFieldExpression><![CDATA[$F{datapelatih_Alamat}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="270" y="10" width="73" height="20" uuid="3809fef1-eb9e-4dce-b2c1-3238062ad79e"/>
+				<textFieldExpression><![CDATA[$F{datapelatih_Telepon}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="347" y="10" width="107" height="20" uuid="95114049-646e-4bad-b834-47d39de8097b"/>
+				<textFieldExpression><![CDATA[$F{datapelatih_Email}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="455" y="10" width="59" height="20" uuid="94ec8e8c-a6f7-4cf3-bbed-1aeaba15b8a3"/>
+				<textFieldExpression><![CDATA[$F{datapelatih_Sabuk}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="501" y="10" width="56" height="20" uuid="408bd431-fde3-4282-8364-bd7774d1fc20"/>
+				<textFieldExpression><![CDATA[$F{datapelatih_Kategori}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="134" splitType="Stretch">
+			<staticText>
+				<reportElement x="410" y="20" width="100" height="20" uuid="f16693f2-5ada-4621-855b-c5a9f64f19a5"/>
+				<textElement textAlignment="Center">
+					<font isUnderline="true"/>
+				</textElement>
+				<text><![CDATA[Pelatih]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="394" y="112" width="130" height="20" uuid="291beb1f-6e96-4f10-9de5-b55a3ee844f5"/>
+				<textElement textAlignment="Center">
+					<font isUnderline="false"/>
+				</textElement>
+				<text><![CDATA[Mayvina Ratnasari, S.Pd.]]></text>
+			</staticText>
+			<line>
+				<reportElement x="394" y="102" width="130" height="1" uuid="1e3bcd89-5cf0-43d6-97af-b61669750da7"/>
+			</line>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="53" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
